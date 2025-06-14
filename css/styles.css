@@ -807,6 +807,15 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 16px;
 }
 
+.modal-comment::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    color: var(--navy-blue-modal);
+}
+
 .accept-check-element {
     display: inline-flex;
     flex-direction: row;
