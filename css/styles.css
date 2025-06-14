@@ -647,7 +647,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: 16px;
 }
 
-
 .modal-overlay {
     display: flex;
     position: fixed;
@@ -661,6 +660,15 @@ h1, h2, h3, h4, h5, h6, p {
     background: var(--navy-blue-modal);
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .modal-overlay .modal {
