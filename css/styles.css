@@ -811,7 +811,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--navy-blue-modal);
 
@@ -832,6 +832,10 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.7;
     letter-spacing: 0.04em;
     color: var(--navy-blue-modal);
+}
+
+.modal-checkbox-box {
+    margin-bottom: 24px;
 }
 
 .accept-check-element {
@@ -866,8 +870,6 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--light-slate);
-
-    margin-bottom: 24px;
 }
 
 .modal-accept-link {
@@ -885,7 +887,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -898,4 +900,6 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.04em;
     text-align: center;
     color: var(--white);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
