@@ -650,9 +650,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .modal-overlay {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
     position: fixed;
 
     top: 0;
@@ -662,22 +659,37 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 999;
 
     background: var(--navy-blue-modal);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay .modal {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     border-radius: 4px;
 
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: var(--dairy);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay .modal .modal-exit-btn {
     display: flex;
+    position: absolute;
+
+    top: 24px;
+    right: 24px;
+
+    padding: 0;
 
     align-items: center;
     justify-content: center;
@@ -688,35 +700,44 @@ h1, h2, h3, h4, h5, h6, p {
     width: 24px;
     height: 24px;
 
-
+    background-color: var(--cornflower);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     fill: var(--cornflower);
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay .modal .modal-exit-btn:hover {
+.modal-overlay .modal .modal-exit-btn:hover, .modal-overlay .modal .modal-exit-btn:focus {
     background-color: var(--ocean);
     border: none;
-
 }
-.modal-overlay .modal .modal-exit-btn:hover .exit-btn-icon {
+.modal-overlay .modal .modal-exit-btn .exit-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-overlay .modal .modal-exit-btn:hover .exit-btn-icon,
+.modal-overlay .modal .modal-exit-btn:focus .exit-btn-icon {
     fill: var(--white);
+}
+
+.modal-input-box {
+    position: relative;
 }
 
 .modal-icon {
     display: flex;
     position: absolute;
-    left: 44px;
+    left: 16px;
 }
 
 .modal-name-icon {
-    top: 144px;
+    top: 11px;
 }
 .modal-phone-icon {
-    top: 212px;
+    top: 8px;
 }
 .modal-email-icon {
-    top: 282px;
+    top: 8px;
 }
 
 .modal-overlay .modal .modal-exit-btn .exit-btn-icon {
