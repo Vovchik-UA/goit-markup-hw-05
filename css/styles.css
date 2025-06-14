@@ -793,6 +793,10 @@ h1, h2, h3, h4, h5, h6, p {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-comment-box {
+    margin-bottom: 16px;
+}
+
 .modal-comment {
     border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
@@ -801,10 +805,24 @@ h1, h2, h3, h4, h5, h6, p {
 
     resize: none;
 
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px;
 
-    margin-bottom: 16px;
+    font-family: var(--font-family);
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    color: var(--navy-blue-modal);
+
+    background-color: transparent;
+    outline: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus {
+    border: 1px solid var(--iris);
 }
 
 .modal-comment::placeholder {

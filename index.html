@@ -531,7 +531,7 @@
                 class="modal-input"
                 id="user-name"
               />
-              <svg class="modal-icon modal-name-icon" width="18" height="24">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -546,7 +546,7 @@
                 class="modal-input"
                 id="modal-phone"
               />
-              <svg class="modal-icon modal-phone-icon" width="18" height="24">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -561,43 +561,46 @@
                 class="modal-input"
                 id="modal-email"
               />
-              <svg class="modal-icon modal-email-icon" width="18" height="24">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
 
           <div class="modal-comment-box">
-            <label
-              for="modal-comment"
-              class="modal-sub-title modal-comment-label"
-              >Comment</label
-            >
+            <label for="user-comment" class="modal-sub-title">Comment</label>
             <textarea
-              name="modal-form"
+              name="user-comment"
               placeholder="Text input"
               class="modal-comment"
-              id="modal-comment"
+              id="user-comment"
             ></textarea>
           </div>
-        </form>
 
-        <label class="modal-accept-box modal-accept-text">
-          <input
-            type="checkbox"
-            name="modal-form"
-            class="modal-accept visually-hidden"
-            id="modal-accept"
-          />
-          <span class="accept-check-element">
-            <svg class="modal-check-icon" width="10" height="8">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-          </span>
-          I accept the terms and conditions of the
-          <a class="modal-accept-link" href="">Privacy Policy</a>
-        </label>
-        <button class="modal-submit-btn" type="submit">Send</button>
+          <div class="modal-checkbox-box">
+            <label
+              for="user-privacy"
+              class="modal-accept-box modal-accept-text"
+            >
+              <input
+                type="checkbox"
+                name="user-privacy"
+                class="modal-accept visually-hidden"
+                id="user-privacy"
+                value="true"
+              />
+
+              <span class="accept-check-element">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-accept-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-submit-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
