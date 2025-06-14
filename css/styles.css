@@ -722,6 +722,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .modal-input-box {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .modal-icon {
@@ -759,7 +760,6 @@ h1, h2, h3, h4, h5, h6, p {
 .modal-form-box {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
 .modal-sub-title {
@@ -769,6 +769,8 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--light-slate);
+
+    margin-bottom: 4px;
 }
 
 .modal-input {
