@@ -617,13 +617,14 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--white);
 }
 
+.footer-emali-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
 .footer-subscribe-btn {
     display: flex;
-
-    position: absolute;
-
-    top: 40px;
-    left: 288px;
 
     background: var(--iris);
     border-radius: 4px;
