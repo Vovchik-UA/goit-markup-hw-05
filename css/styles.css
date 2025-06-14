@@ -605,17 +605,16 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
-    padding-left: 16px;
-}
-
-.footer-emali::placeholder {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: var(--white);
+
+    padding-left: 16px;
 }
+
 
 .footer-emali-form {
     display: flex;
@@ -641,8 +640,13 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--white);
 
     align-items: center;
-    gap: 16px;
+    justify-content: center;
 }
+
+.footer-icon-telegram {
+    margin-left: 16px;
+}
+
 
 .modal-overlay {
     display: flex;
