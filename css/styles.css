@@ -582,11 +582,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer-subscribe {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
 }
 
-.footer-subscribe .footer-emali-label {
+.footer-subscribe .footer-emali-title {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -621,13 +621,14 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
 
     position: absolute;
-    top: auto;
-    left: calc(100% + 24px);
+
+    top: 40px;
+    left: 288px;
 
     background: var(--iris);
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
 
     font-family: var(--font-family);
