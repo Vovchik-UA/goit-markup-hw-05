@@ -789,14 +789,14 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: 8px;
 }
 
-.modal-accept:checked + .modal-accept-box .modal-accept-text .accept-check-element {
+.modal-accept:checked + .modal-accept-box .accept-check-element {
     fill: var(--cloud);
     background-color: var(--ocean);
     border: 1px solid var(--ocean);
 }
 
 .modal-accept-text {
-
+    display: inline-block;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
